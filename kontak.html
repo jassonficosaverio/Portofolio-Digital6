@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak — Jasson Fico Saverio</title>
+<meta name="description" content="Hubungi Jasson Fico Saverio, siswa Teknik Komputer dan Jaringan (TKJ).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="kontak" class="route-transition">
+
+<!-- ===== INTRO PEMBUKA ===== -->
+<div class="site-intro" id="siteIntro" aria-hidden="true">
+  <div class="intro-icons">
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span>
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
+  </div>
+  <p class="intro-text">
+    <span class="intro-line" id="introLine1"></span><span class="intro-cursor" id="introCursor"></span>
+    <span class="intro-line" id="introLine2"></span>
+  </p>
+  <span class="intro-url">Jasson Fico Saverio</span>
+</div>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <a href="index.html" class="brand">jasson<span class="brand-dot">.</span>dev</a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" data-nav="beranda">Beranda</a>
+    <a href="tentang.html" data-nav="tentang">Tentang</a>
+    <a href="portofolio.html" data-nav="portofolio">Portofolio</a>
+    <a href="galeri.html" data-nav="galeri">Galeri</a>
+    <a href="kontak.html" data-nav="kontak">Kontak</a>
+    <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+  </nav>
+
+  <a href="kontak.html" class="btn btn-primary btn-small">Hubungi Saya</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ===== KONTAK / CONTACT PERSON ===== -->
+  <section class="section section-contact" id="kontak">
+    <div class="section-head">
+      <p class="section-eyebrow">Kontak</p>
+      <h2>Ada yang ingin didiskusikan?</h2>
+      <p class="section-sub">Terbuka untuk kesempatan PKL, magang, atau sekadar ngobrol soal jaringan dan server.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Hubungi saya -->
+      <div class="contact-panel">
+        <h3>Hubungi Saya</h3>
+        <p class="contact-panel-desc">Isi form ini, nanti akan terbuka aplikasi email kamu dengan pesan yang sudah terisi otomatis.</p>
+
+        <form class="contact-form" id="contactForm">
+          <label class="field">
+            <span>Nama</span>
+            <input type="text" name="name" placeholder="Nama kamu" required>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="email@contoh.com" required>
+          </label>
+          <label class="field">
+            <span>Pesan</span>
+            <textarea name="message" rows="4" placeholder="Tulis pesanmu di sini..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+        </form>
+
+        <div class="connect-list">
+          <a href="mailto:jassonficosaverio@gmail.com" class="connect-item">
+            <span class="connect-icon">✉️</span>
+            <span><strong>Email</strong><br>jassonficosaverio@gmail.com</span>
+          </a>
+          <a href="https://github.com/jassonficosaverio" target="_blank" rel="noopener" class="connect-item">
+            <span class="connect-icon">🖥️</span>
+            <span><strong>GitHub</strong><br>github.com/jassonficosaverio</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Comments / buku tamu -->
+      <div class="contact-panel">
+        <h3>Komentar</h3>
+        <p class="contact-panel-desc">Tinggalkan jejak atau kesan kamu di sini. <em>Komentar tersimpan sementara selama sesi ini.</em></p>
+
+        <form class="comment-form" id="commentForm">
+          <label class="field">
+            <span>Nama</span>
+            <input type="text" name="name" placeholder="Nama kamu" required>
+          </label>
+          <label class="field">
+            <span>Komentar</span>
+            <textarea name="comment" rows="3" placeholder="Tulis kesan kamu..." required></textarea>
+          </label>
+          <label class="upload-field" id="uploadField">
+            <input type="file" name="image" accept="image/*" id="commentImage" hidden>
+            <span id="uploadLabel">📎 Lampirkan gambar (opsional)</span>
+          </label>
+          <button type="submit" class="btn btn-outline btn-block">Kirim Komentar</button>
+        </form>
+
+        <div class="comment-list" id="commentList"></div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Dibuat dengan 🍥 oleh Jasson Fico Saverio · Siswa TKJ · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

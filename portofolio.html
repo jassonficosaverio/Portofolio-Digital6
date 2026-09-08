@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio — Jasson Fico Saverio</title>
+<meta name="description" content="Proyek, keahlian, dan tools Jasson Fico Saverio, siswa Teknik Komputer dan Jaringan (TKJ).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="portofolio" class="route-transition">
+
+<!-- ===== INTRO PEMBUKA ===== -->
+<div class="site-intro" id="siteIntro" aria-hidden="true">
+  <div class="intro-icons">
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span>
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
+  </div>
+  <p class="intro-text">
+    <span class="intro-line" id="introLine1"></span><span class="intro-cursor" id="introCursor"></span>
+    <span class="intro-line" id="introLine2"></span>
+  </p>
+  <span class="intro-url">Jasson Fico Saverio</span>
+</div>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <a href="index.html" class="brand">jasson<span class="brand-dot">.</span>dev</a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" data-nav="beranda">Beranda</a>
+    <a href="tentang.html" data-nav="tentang">Tentang</a>
+    <a href="portofolio.html" data-nav="portofolio">Portofolio</a>
+    <a href="galeri.html" data-nav="galeri">Galeri</a>
+    <a href="kontak.html" data-nav="kontak">Kontak</a>
+    <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+  </nav>
+
+  <a href="kontak.html" class="btn btn-primary btn-small">Hubungi Saya</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ===== PORTOFOLIO (tab: proyek / keahlian / tech stack) ===== -->
+  <section class="section" id="portofolio">
+    <div class="section-head">
+      <p class="section-eyebrow">Portofolio</p>
+      <h2>Proyek, Keahlian &amp; Tools</h2>
+      <p class="section-sub">Jelajahi proyek, kemampuan, dan tools yang aku pakai lewat tab di bawah ini.</p>
+    </div>
+
+    <div class="tab-switch" id="tabSwitch">
+      <span class="tab-indicator" id="tabIndicator"></span>
+      <button class="tab-btn is-active" data-tab="proyek" type="button">Proyek</button>
+      <button class="tab-btn" data-tab="keahlian" type="button">Keahlian</button>
+      <button class="tab-btn" data-tab="techstack" type="button">Tech Stack</button>
+    </div>
+
+    <!-- panel: PROYEK -->
+    <div class="tab-panel is-active" id="panel-proyek">
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-file">catatan-jaringan.md</span>
+          </div>
+          <h3>Rangkuman Materi Jaringan dengan Bantuan AI</h3>
+          <p>Menyusun catatan belajar topik dasar TKJ (topologi, OSI layer, subnetting) dengan bantuan prompt AI supaya lebih mudah dipahami dan diingat.</p>
+          <div class="tag-list">
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">Riset Mandiri</span>
+          </div>
+          <button class="project-toggle" type="button" aria-expanded="false">Lihat detail <span class="chev">↓</span></button>
+          <div class="project-detail">
+            <p><strong>Fitur utama</strong></p>
+            <ul>
+              <li>Rangkuman per-topik yang mudah diulang</li>
+              <li>Disusun dari prompt riset terstruktur</li>
+              <li>Dipakai untuk belajar mandiri sebelum ujian praktik</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-file">simulasi-topologi.pkt</span>
+          </div>
+          <h3>Simulasi Topologi Jaringan Sederhana</h3>
+          <p>Latihan menyusun dan menguji topologi jaringan dasar menggunakan Cisco Packet Tracer sebagai bagian dari praktik sekolah.</p>
+          <div class="tag-list">
+            <span class="tag">Cisco Packet Tracer</span>
+            <span class="tag">Latihan</span>
+          </div>
+          <button class="project-toggle" type="button" aria-expanded="false">Lihat detail <span class="chev">↓</span></button>
+          <div class="project-detail">
+            <p><strong>Fitur utama</strong></p>
+            <ul>
+              <li>Topologi star sederhana dengan beberapa PC &amp; switch</li>
+              <li>Pengujian koneksi antar perangkat lewat command prompt</li>
+              <li>Latihan dasar sebelum masuk materi subnetting</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-file">template-prompt.txt</span>
+          </div>
+          <h3>Koleksi Template Prompt untuk Tugas Sekolah</h3>
+          <p>Kumpulan prompt yang aku susun sendiri untuk membantu riset, merapikan laporan, dan mempercepat pengerjaan tugas sehari-hari.</p>
+          <div class="tag-list">
+            <span class="tag">AI Tools</span>
+            <span class="tag">Produktivitas</span>
+          </div>
+          <button class="project-toggle" type="button" aria-expanded="false">Lihat detail <span class="chev">↓</span></button>
+          <div class="project-detail">
+            <p><strong>Fitur utama</strong></p>
+            <ul>
+              <li>Template prompt untuk riset &amp; rangkuman materi</li>
+              <li>Template untuk merapikan struktur laporan tugas</li>
+              <li>Terus ditambah setiap kali menemukan pola prompt baru yang berguna</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- panel: KEAHLIAN -->
+    <div class="tab-panel" id="panel-keahlian">
+      <div class="skill-grid">
+
+        <div class="skill-card skill-card-featured">
+          <div class="skill-card-head">
+            <span class="rack-led led-teal"></span>
+            <h3>AI &amp; Prompt Engineering</h3>
+            <span class="skill-badge">Andalan</span>
+          </div>
+          <ul class="skill-list">
+            <li><span>Menyusun prompt yang efektif</span><div class="skill-bar"><i style="width:88%"></i></div></li>
+            <li><span>Riset &amp; rangkuman materi dengan AI</span><div class="skill-bar"><i style="width:85%"></i></div></li>
+            <li><span>Otomatisasi tugas sekolah dengan AI tools</span><div class="skill-bar"><i style="width:80%"></i></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <span class="rack-led led-pink"></span>
+            <h3>Jaringan &amp; Komputer</h3>
+            <span class="skill-badge skill-badge-muted">Sedang dipelajari</span>
+          </div>
+          <ul class="skill-list">
+            <li><span>Dasar topologi &amp; kabel jaringan</span><div class="skill-bar"><i style="width:55%"></i></div></li>
+            <li><span>Pengenalan subnetting &amp; IP Addressing</span><div class="skill-bar"><i style="width:45%"></i></div></li>
+            <li><span>Dasar perakitan &amp; perawatan PC</span><div class="skill-bar"><i style="width:60%"></i></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <span class="rack-led led-gold"></span>
+            <h3>Soft Skill</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span>Rasa ingin tahu &amp; semangat belajar mandiri</span><div class="skill-bar"><i style="width:90%"></i></div></li>
+            <li><span>Beradaptasi dengan teknologi baru</span><div class="skill-bar"><i style="width:80%"></i></div></li>
+            <li><span>Konsisten mengejar target</span><div class="skill-bar"><i style="width:82%"></i></div></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- panel: TECH STACK -->
+    <div class="tab-panel" id="panel-techstack">
+      <div class="stack-grid">
+        <div class="stack-item"><span class="stack-icon stack-icon-1">PT</span><span>Packet Tracer</span></div>
+        <div class="stack-item"><span class="stack-icon stack-icon-2">AI</span><span>Prompt Engineering</span></div>
+        <div class="stack-item"><span class="stack-icon stack-icon-3">Win</span><span>Windows</span></div>
+        <div class="stack-item"><span class="stack-icon stack-icon-4">Lx</span><span>Linux Dasar</span></div>
+        <div class="stack-item"><span class="stack-icon stack-icon-5">Net</span><span>Jaringan LAN</span></div>
+        <div class="stack-item"><span class="stack-icon stack-icon-6">Ofc</span><span>Microsoft Office</span></div>
+        <div class="stack-item"><span class="stack-icon stack-icon-7">HTML</span><span>HTML &amp; CSS</span></div>
+        <div class="stack-item"><span class="stack-icon stack-icon-8">Cv</span><span>Canva</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Dibuat dengan 🍥 oleh Jasson Fico Saverio · Siswa TKJ · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

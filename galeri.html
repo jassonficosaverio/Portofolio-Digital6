@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri — Jasson Fico Saverio</title>
+<meta name="description" content="Galeri karya Jasson Fico Saverio, siswa Teknik Komputer dan Jaringan (TKJ).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="galeri" class="route-transition">
+
+<!-- ===== INTRO PEMBUKA ===== -->
+<div class="site-intro" id="siteIntro" aria-hidden="true">
+  <div class="intro-icons">
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span>
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
+    <span class="intro-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
+  </div>
+  <p class="intro-text">
+    <span class="intro-line" id="introLine1"></span><span class="intro-cursor" id="introCursor"></span>
+    <span class="intro-line" id="introLine2"></span>
+  </p>
+  <span class="intro-url">Jasson Fico Saverio</span>
+</div>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <a href="index.html" class="brand">jasson<span class="brand-dot">.</span>dev</a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" data-nav="beranda">Beranda</a>
+    <a href="tentang.html" data-nav="tentang">Tentang</a>
+    <a href="portofolio.html" data-nav="portofolio">Portofolio</a>
+    <a href="galeri.html" data-nav="galeri">Galeri</a>
+    <a href="kontak.html" data-nav="kontak">Kontak</a>
+    <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+  </nav>
+
+  <a href="kontak.html" class="btn btn-primary btn-small">Hubungi Saya</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ===== GALERI KARYA ===== -->
+  <section class="section gallery-section" id="galeri">
+    <div class="section-head gallery-head">
+      <p class="section-eyebrow">Galeri</p>
+      <h2>Galeri Karya</h2>
+      <p class="section-sub">Dokumentasi hasil kerja dan latihan — klik salah satu untuk melihat lebih besar.</p>
+      <span class="gallery-count" id="galleryCount">0 foto</span>
+    </div>
+
+    <!--
+      Cara mengisi galeri ini:
+      1. Upload file fotomu ke folder yang sama dengan galeri.html (misalnya di dalam folder "galeri/").
+      2. Ganti src="" tiap <img> di bawah dengan nama file fotomu, misalnya src="galeri/foto-1.jpg".
+      3. Ganti teks data-caption dan alt dengan judul singkat foto tersebut.
+      4. Hapus <figure> yang tidak dipakai kalau fotomu kurang dari 15.
+      5. Kalau mau, perbarui juga angka "Karya di Galeri" di tentang.html secara manual.
+      Maksimal 15 foto.
+    -->
+    <div class="gallery-grid" id="galleryGrid">
+      <figure class="gallery-item"><img src="" alt="Foto karya 1" data-caption="Foto karya 1" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 2" data-caption="Foto karya 2" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 3" data-caption="Foto karya 3" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 4" data-caption="Foto karya 4" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 5" data-caption="Foto karya 5" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 6" data-caption="Foto karya 6" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 7" data-caption="Foto karya 7" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 8" data-caption="Foto karya 8" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 9" data-caption="Foto karya 9" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 10" data-caption="Foto karya 10" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 11" data-caption="Foto karya 11" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 12" data-caption="Foto karya 12" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 13" data-caption="Foto karya 13" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 14" data-caption="Foto karya 14" loading="lazy"></figure>
+      <figure class="gallery-item"><img src="" alt="Foto karya 15" data-caption="Foto karya 15" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- Lightbox untuk galeri -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Sebelumnya">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Berikutnya">›</button>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>Dibuat dengan 🍥 oleh Jasson Fico Saverio · Siswa TKJ · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
