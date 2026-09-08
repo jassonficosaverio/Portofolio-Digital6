@@ -33,7 +33,7 @@ if (intro) {
     const cursorEl = document.getElementById('introCursor');
     const urlEl = intro.querySelector('.intro-url');
     const line1Text = 'Welcome to my';
-    const line2Text = 'Portfolio';
+    const line2Text = 'Portofolio';
     let finished = false;
 
     function typeLine(el, text, delay, onDone){
